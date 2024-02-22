@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "1eab3c37-0921-4619-af2e-719d1172cc37",
+		"name": "openEnvoy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31607426"
+	},
+	"item": [
+		{
+			"name": "multiple-files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/Users/vidhupawar/Documents/openEnvoy/OpenEnvoy/file.js"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/code-counter/count-multiple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"code-counter",
+						"count-multiple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single-file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/vidhupawar/Documents/openEnvoy/OpenEnvoy/file.js"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/code-counter/count-multiple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"code-counter",
+						"count-multiple"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
